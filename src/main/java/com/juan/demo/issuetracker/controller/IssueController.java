@@ -36,7 +36,7 @@ public class IssueController {
     }
 
     @PostMapping(value = "/issues")
-    public Issue addNewUsers(@RequestBody Issue issue) {
+    public Issue addNewIssue(@RequestBody Issue issue) {
         log.info("Saving issue.");
         return issueService.createNewIssue(issue);
     }
